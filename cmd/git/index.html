@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- dev -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>git</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?45ade4bf8c82aab9f254c608065b1416";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<script type="text/javascript" src="https://js.users.51.la/16469967.js"></script>
+</head>
+
+<body>
+	<div class="main">
+		<h2>git常用命令</h2>
+		<h2 class="i_tie">2018-08-23</h2>
+		<h4>git克隆(打开对应目录)</h4>
+		<pre>git clone https://git.XXXX.git</pre>
+		<h3>git提交步骤</h3>
+		<h4>把修改后要提交的所有文件提交到本地暂存仓库</h4>
+		<pre>git add -A</pre>
+		<h4>添加提交日志</h4>
+		<pre>git commit -m '日志xx'</pre>
+		<h4>拉取仓库最新代码</h4>
+		<pre>git pull origin master</pre>
+		<h4>提交推送</h4>
+		<pre>git push origin master</pre>
+		<p>第一次提交本地没有 .md文件 提交错误解决方法：http://www.jianshu.com/p/835e0a48c825</p>
+		<br><br><br>
+		<h4>初始化仓库(打开对应目录)</h4>
+		<pre>git init</pre>
+
+		<h4>查看当前目录下git地址</h4>
+		<pre>git remote -v</pre>
+		<h4>删除当前目录下git</h4>
+		<pre>git remote rm origin</pre>
+		<h4>添加新的git地址</h4>
+		<pre>git remote add originxxx http://git.XXXX.git</pre>
+		<br><br><br>
+		<h4>查看远程分支：</h4>
+		<pre>git branch -a</pre>
+		<p>
+			<img src="git branch -a.png" alt="">
+		</p>
+		<h4>查看本地分支</h4>
+		<pre>git branch</pre>
+		<p>
+			<img src="git branch.png" alt="">
+		</p>
+		<h4>拉取远程某个分支到本地: [本地分支名不能与原有的本地分支名重复]</h4>
+		<pre>git checkout -b 本地分支名 origin/远程分支名</pre>
+		<p>
+			<img src="拉取远程分支到本地.png" alt="">
+		</p>
+		<h4>查看本地分支</h4>
+		<pre>git branch</pre>
+		<p>
+			<img src="查看本地分支.png" alt="">
+		</p>
+		<h4>创建并切换到本地分支</h4>
+		<pre>git checkout -b 本地分支名</pre>
+		<h4>切换本地分支</h4>
+		<pre>git checkout 本地分支名</pre>
+		<p>
+			<img src="本地切换回master分支.png" alt="">
+		</p>
+		<h4>删除本地分支</h4>
+		<pre>git branch -D 本地分支名</pre>
+		<p>
+			<img src="删除本地分支.png" alt="">
+		</p>
+		<h4>删除远程分支</h4>
+		<pre>git push origin --delete 远程分支名</pre>
+		<p>
+			<img src="删除远程分支.png" alt="">
+		</p>
+		<h4>合并某分支到当前分支[合并后需要push一下以提交到远程仓库]</h4>
+		<pre>git merge 某分支名</pre>
+		<h4>github新建远程分支后本地git branch -a不显示新增的分支</h4>
+		<p>本地先运行git pull更新一下即可。</p>
+		<br>
+		<h4>git命令忽略本地修改的文件(不提交某个文件)</h4>
+		<pre>git update-index --assume-unchanged xxx.html</pre>
+		<h4>如果想恢复该文件，可以用以下代码来恢复跟踪</h4>
+		<pre>git update-index --no-assume-unchanged xxx.html</pre>
+
+		<h4>把readme.txt文件在工作区做的修改全部撤销[-- 很重要，如果没有--的话，那么命令变成创建分支了。]</h4>
+		<pre>git checkout -- readme.txt</pre>
+	</div>
+
+</body>
+
+</html>

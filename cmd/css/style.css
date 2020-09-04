@@ -1,0 +1,42 @@
+body {
+    font-family: "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", 微软雅黑, STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 10px;
+    font-weight: 500
+}
+a{
+    text-decoration: none;
+    color: cornflowerblue;
+    border:1px dashed #ccc;
+    display:inline-block;
+    padding: 0 2px;
+}
+h2 {
+    text-align: center;
+}
+
+.i_tie {
+    font-size: 14px;
+    text-align: right;
+    font-weight: lighter;
+    
+}
+
+.main {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 20px 20px;
+    border: 1px solid #ccc;
+}
+
+pre {
+    background-color: #dedede;
+    padding: 5px;
+    margin-top: 5px;
+}
+img{
+    border:1px solid #ececec;
+}

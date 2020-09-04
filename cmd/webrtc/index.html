@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GetUserMedia实例</title>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?45ade4bf8c82aab9f254c608065b1416";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript" src="https://js.users.51.la/16469967.js"></script>
+</head>
+
+<body>
+    <video id="video" autoplay></video>
+</body>
+
+
+<script type="text/javascript">
+    var getUserMedia = (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
+
+    getUserMedia.call(navigator, {
+        video: true,
+        audio: true
+    }, function (localMediaStream) {
+        var video = document.getElementById('video');
+        video.src = window.URL.createObjectURL(localMediaStream);
+        console.log(localMediaStream)
+        video.onloadedmetadata = function (e) {
+            console.log("Label: " + localMediaStream.label);
+            console.log("AudioTracks", localMediaStream.getAudioTracks());
+            console.log("VideoTracks", localMediaStream.getVideoTracks());
+            console.log(localMediaStream)
+        };
+    }, function (e) {
+        console.log('Reeeejected!', e);
+    });
+</script>
+
+
+</html>

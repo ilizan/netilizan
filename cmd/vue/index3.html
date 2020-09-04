@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vue</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?45ade4bf8c82aab9f254c608065b1416";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript" src="https://js.users.51.la/16469967.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <h2>vue cli[3.x]</h2>
+        <h2 class="i_tie">2018-08-23</h2>
+        <h2 class="i_tie">vue:
+            <a target="_blank" href="https://cn.vuejs.org/">https://cn.vuejs.org/</a>
+        </h2>
+        <h2 class="i_tie">vue-cli:
+            <a target="_blank" href="https://cli.vuejs.org/">https://cli.vuejs.org/</a>
+        </h2>
+
+        <h3>安装</h3>
+        <p>首先安装node，安装方法<a href="../node/index.html">跳转</a>。</p>
+        <hr>
+        <h3>常用命令</h3>
+        <h4>安装&卸载@vue/cli</h4>
+        <pre>npm install -g @vue/cli</pre>
+        <pre>npm uninstall @vue/cli -g</pre>
+        <p>更新vue版本请卸载后到C:\Users\xxxxx\AppData\Roaming\npm目录下删除缓存文件。</p>
+        <h4>安装后查看（注意大写V）</h4>
+        <pre>vue -V</pre>
+
+        <hr>
+        <h2>新建项目</h2>
+        <h3>方法一</h3>
+        <h4>运行图形化界面手动建项目</h4>
+        <pre>vue ui</pre>
+        <hr>
+        <h3>方法二</h3>
+        <h4>新建vue项目</h4>
+        <pre>vue create hello-world</pre>
+        <p>系统将提示您选择预设。您可以选择基本Babel + ESLint设置附带的默认预设，也可以选择“手动选择功能”以选择所需的功能。</p>
+        <hr>
+        <h2>启动</h2>
+        <h4>安装依赖</h4>
+        <pre>cnpm i</pre>
+        <h4>启动项目</h4>
+        <pre>npm run serve</pre>
+        <h4>打包</h4>
+        <pre>npm run build</pre>
+        <h2>vue.config.js</h2>
+        <p>因vuecli3精简了结构，没有了复杂的配置文件，所以建议手动新建vue.config.js文件，可配置更多选项。</p>
+        <p>项目根目录下新建vue.config.js文件</p>
+        <pre>
+module.exports = {
+    // 基本路径
+    baseUrl: './',//打包生成index.html里引入cssjs文件相对路径
+    devServer: {
+        // host: 'localhost', // can be overwritten by process.env.HOST
+        port: 8081,//本地开发启动端口
+        https: true,//是否开启https
+        open: true, //配置自动启动浏览器
+    }
+}
+        </pre>
+    </div>
+</body>
+
+</html>

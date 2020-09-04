@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>node安装</title>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?45ade4bf8c82aab9f254c608065b1416";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript" src="https://js.users.51.la/16469967.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <h2>node安装</h2>
+        <h2 class="i_tie">2018-07-18</h2>
+
+        <h3>安装</h3>
+        <p>官网下载node.js，<a href="http://nodejs.cn/download/" target="_block">地址</a>。</p>
+        <hr>
+        <h3>命令</h3>
+        <h4>安装成功后查看node版本</h4>
+        <pre>node -v</pre>
+        <p>
+            <img src="node-v.png" alt="">
+        </p>
+        <h4>查看npm版本</h4>
+        <pre>npm -v</pre>
+        <p>
+            <img src="npm-v.png" alt="">
+        </p>
+        <h4>查看npm安装模块目录</h4>
+        <pre>npm config ls</pre>
+        <p>
+            <img src="npm-config-ls.png" alt="">
+        </p>
+
+        <h4>因国内npm较慢，可安装 <a href="https://npm.taobao.org/" target="_block">淘宝镜像</a>cnpm：</h4>
+        <pre>npm install -g cnpm --registry=https://registry.npm.taobao.org</pre>
+        <p>
+            <img src="cnpm.png" alt="">
+        </p>
+        <h4>查看cnpm版本</h4>
+        <pre>cnpm -v</pre>
+        <p>
+            <img src="cnpm-v.png" alt="">
+        </p>
+
+        <h2>node升级</h2>
+        <div>
+            本地运行
+            <pre>node -v
+npm -v</pre>
+            查看本地node，npm版本。
+        </div>
+        <p>
+            到<a target="_block" href="https://nodejs.org/zh-cn/">node官网</a>下载<b>LTS</b>版，覆盖原安装。
+        </p>
+        <div>
+            再运行
+            <pre>node -v
+npm -v</pre>
+            查看本地node，npm版本，版本号为下载的node版本号则升级成功。
+        </div>
+    </div>
+</body>
+
+</html>
