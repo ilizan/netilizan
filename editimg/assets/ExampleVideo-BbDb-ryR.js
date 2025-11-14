@@ -1,4 +1,4 @@
-import{P as ci}from"./PinturaEditor-Cmy28MUA.js";import{h as ui,y as di,R as mi,f as fi,e as pi}from"./pintura-BMqhf0QJ.js";import{bO as hi,u as Fn,v as ge,t as $i,H as Rn,I as gi,ar as vi,aX as bi,F as yi,aK as In}from"./index-BA7zxLou.js";/*!
+import{P as ci}from"./PinturaEditor-DuqWQUZl.js";import{h as ui,y as di,R as mi,f as fi,e as pi}from"./pintura-BMqhf0QJ.js";import{bO as hi,u as Fn,v as ge,t as $i,H as Rn,I as gi,ar as vi,aX as bi,F as yi,aK as In}from"./index-BAi-_Ng5.js";/*!
 * Pintura Video Extension v1.16.3 - Test version
 * (c) 2018-2025 Pintura Labs B.V. - All Rights Reserved
 * License: https://pqina.nl/pintura/license/
